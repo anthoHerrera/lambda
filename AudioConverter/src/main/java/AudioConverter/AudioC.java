@@ -12,8 +12,8 @@ public class AudioC {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		try {
-			File source = new File("C:/Users/USER/Desktop/abc.ogg");
-			File target = new File("C:/Users/USER/Desktop/abcd.mp3");
+			File source = new File("/home/anthony/Descargas/ap.ogg");
+			File target = new File("/home/anthony/Descargas/out.mp3");
 
 			// Audio Attributes
 			AudioAttributes audio = new AudioAttributes();
@@ -37,8 +37,8 @@ public class AudioC {
 		}
 		
 		try {
-			File source1 = new File("C:/Users/USER/Desktop/abc.ogg");
-			File target1 = new File("C:/Users/USER/Desktop/abcd.ac3");
+			File source1 = new File("/home/anthony/Descargas/ap.ogg");
+			File target1 = new File("/home/anthony/Descargas/out.ac3");
 
 			// Audio Attributes
 			AudioAttributes audio = new AudioAttributes();
@@ -61,8 +61,8 @@ public class AudioC {
 			
 		}
 		try {
-			File source2 = new File("C:/Users/USER/Desktop/abc.mp3");
-			File target2 = new File("C:/Users/USER/Desktop/abcd.ogg");
+			File source2 = new File("/home/anthony/Descargas/out.mp3");
+			File target2 = new File("/home/anthony/Descargas/out.ogg");
 
 			// Audio Attributes
 			AudioAttributes audio = new AudioAttributes();

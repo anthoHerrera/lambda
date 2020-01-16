@@ -3,19 +3,20 @@
  *
  * This generated file contains a sample Java Library project to get you started.
  * For more details take a look at the Java Libraries chapter in the Gradle
- * User Manual available at https://docs.gradle.org/6.0/userguide/java_library_plugin.html
+ * user guide available at https://docs.gradle.org/5.0/userguide/java_library_plugin.html
  */
 
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
+    id 'maven'
 }
 
 repositories {
-    // Use jcenter for resolving dependencies.
+    // Use jcenter for resolving your dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
-    apply plugin: 'maven'
+    mavenCentral()
 }
 
 java {
@@ -25,9 +26,8 @@ java {
 
 dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.
-
-    // This dependency is used internally, and not exposed to consumers on their own compile classpath.
-    compile group: 'ws.schild', name: 'jave-all-deps', version: '2.7.2'
+    compile 'com.amazonaws:aws-lambda-java-core:1.2.0'
+    compile 'com.amazonaws:aws-lambda-java-events:1.2.0'
     compile fileTree(dir: 'jars', include: '*.jar')
 }
 
